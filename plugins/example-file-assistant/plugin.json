@@ -1,0 +1,23 @@
+{
+  "id": "gravity.example_file_assistant",
+  "name": "Example File Assistant",
+  "version": "0.1.0",
+  "entrypoint": "plugin.py",
+  "permissions": ["filesystem.read", "filesystem.write"],
+  "commands": [
+    {
+      "name": "example.list_workspace",
+      "description": "Lists files through the built-in file listing tool.",
+      "tool": "file.list"
+    },
+    {
+      "name": "example.search_workspace",
+      "description": "Searches files through the built-in file search tool.",
+      "tool": "file.search"
+    }
+  ],
+  "settings": {
+    "enabled": true
+  }
+}
+
